@@ -315,6 +315,10 @@ header {
   border-bottom: 1px solid #fff;
 }
 
+#main_content_wrap {
+  margin-top: 30px;
+}
+
 #main_content {
   padding-top: 40px;
 }
@@ -458,7 +462,7 @@ Small Device Styles
   #home_wrap {
     text-align: center;
     width: 100%;
-    left: -3px;
+    left: 0;
   }
 
   .downloads {
@@ -478,6 +482,9 @@ Small Device Styles
     padding: 60px 10px;
   }
   
+  #main_content_wrap {
+    margin-top: 0;
+  }
   #main_content.inner {
     padding: 40px 20px;
   }
