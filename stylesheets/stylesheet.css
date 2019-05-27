@@ -359,7 +359,7 @@ My additions
 }
 
 #home_wrap {
-  top: 10px;
+  top: 15px;
   left: 10px;
   z-index: 20;
   position: absolute;
@@ -378,7 +378,7 @@ My additions
 
 /* Bruce */
 #banner {
-  top: 0;
+  top: 10px;
   right: 5px;
   z-index: 10;
   position: absolute;
@@ -425,6 +425,7 @@ Small Device Styles
 
 @media screen and (max-width: 480px) {
   #banner {
+    top: 0;
     width: 100%;
     position: relative;
     display: block;
