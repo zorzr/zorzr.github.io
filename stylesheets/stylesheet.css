@@ -397,6 +397,14 @@ My additions
   line-height: 1.5;
   margin-right: -5px;
 }
+
+.tab.leftmost {
+  border-radius: 7px 0 0 7px;
+}
+.tab.rightmost {
+  border-radius: 0 7px 7px 0;
+}
+
 .tab:hover, .tab:focus {
   color: white;
   border-bottom: none;
