@@ -212,15 +212,13 @@ table {
  }
 
 th {
-  /* padding: 10px; */ 
-  padding: 10px 13px;
+  padding: 10px;
   background: #222;
   color: #fff;
  }
 
 td {
-  /* padding: 10px; */
-  padding: 10px 13px;
+  padding: 10px;
   border: 1px solid #222;
  }
 
