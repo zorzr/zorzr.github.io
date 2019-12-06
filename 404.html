@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404 - Not found</title>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="zorzr's website hosted by GitHub Pages"/>
+        <link rel="icon" href="https://github.githubassets.com/favicon.ico">
+
+        <link href="static/css/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,700,700italic' rel='stylesheet' type='text/css'>
+        
+        <style>
+        body {
+            background: black;
+        }
+
+        .error_content {
+            background: rgba(0, 0, 0, 0) !important;
+            box-shadow: none !important;
+            text-align: center;
+            color: white;
+        }
+        
+        .error_content span {
+            color: white;
+            font-size: 5em;
+            font-weight: bold;
+        }
+
+        .error_content h3 {
+            color: white;
+            margin: 0;
+            margin-top: -20px;
+        }
+
+        .error_content pre {
+            margin: 0 auto;
+            width: 260px;
+        }
+
+        .error_content code {
+            color: rgb(44, 226, 44);
+        }
+
+        .rounded {
+            border-radius: 7px;
+        }
+
+        #particles-js canvas {
+            display: block;
+            /* vertical-align: bottom; */
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+            -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+            transition: opacity .8s ease, transform 1.4s ease
+        }
+
+        #particles-js {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            left: 0
+        }
+        </style>
+    </head>
+    <body>
+        <!-- particles.js container --> 
+        <div id="particles-js"></div>
+
+        <!-- MAIN CONTENT -->
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner error_content">
+                <span>404</span>
+                <h3>Page not found</h3>
+
+                <br>
+                <pre><code>> 4 8 15 16 23 42     
+SEEMS LIKE YOU'RE LOST</code></pre>
+
+                <br>
+                <a href="/" class="tab rounded">Home</a>
+            </section>
+        </div>
+
+        
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script type="text/javascript">
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                "value": 400,
+                "density": {
+                    "enable": true,
+                    "value_area": 789.1476416322727
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 0.48927153781200905,
+                "random": false,
+                "anim": {
+                    "enable": true,
+                    "speed": 0.2,
+                    "opacity_min": 0,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 2,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 2,
+                    "size_min": 0,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 0.8,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "bubble"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                    "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 83.91608391608392,
+                    "size": 1,
+                    "duration": 3,
+                    "opacity": 1,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+        });
+        </script>
+    </body>
+</html>

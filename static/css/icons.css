@@ -1,0 +1,63 @@
+.card {
+    text-align: center;
+}
+
+.card .row {
+    display: inline;
+    padding-bottom: 5px;
+}
+
+.card .row h2 {
+    margin: 0 0 7px 0;
+}
+
+.card .row p {
+    line-height: 1.3;
+}
+
+.card .row a {
+    border-bottom: none;
+    outline: none;
+}
+
+.icon {
+    margin: 5px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.github {
+    background: url('../pics/sprite.png') 0 0;
+}
+.github:hover, .github:focus {
+    background: url('../pics/sprite.png') 0 -25px;
+}
+.gitlab {
+    background: url('../pics/sprite.png') -25px 0;
+}
+.gitlab:hover, .twitter:focus {
+    background: url('../pics/sprite.png') -25px -25px;
+}
+.twitter {
+    background: url('../pics/sprite.png') -50px 0;
+}
+.twitter:hover {
+    background: url('../pics/sprite.png') -50px -25px;
+}
+/*
+.linkedin {
+    background: url('../pics/sprite.png') -75px 0;
+}
+.linkedin:hover {
+    background: url('../pics/sprite.png') -75px -25px;
+}
+*/
+
+#avatar {
+    margin: 0;
+    padding: 0;
+    width: 128px;
+    height: 128px;
+    outline: 3px solid #ccc;
+}
