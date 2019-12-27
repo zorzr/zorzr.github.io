@@ -145,9 +145,9 @@ p img {
 
 pre, code {
     width: 100%;
-    color: #fc9723;
+    color: #8acaff;
     background-color: #303030;
-    /* box-shadow: 0 0 10px rgba(200,200,200,.1); */
+    border: 1px solid #666;
 
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
     font-size: 14px;
@@ -156,7 +156,6 @@ pre, code {
 pre {
     padding: 10px 20px;
     overflow: auto;
-    border: 1px solid #666;
 }
 
 code {
@@ -166,15 +165,20 @@ code {
 
 pre code {
     display: block;
-    box-shadow: none;
+    border: none;
 }
 
 blockquote {
-    color: #dfa25d;
-    border-left: 3px solid #dfa25d;
+    color: #9ac5ff;
+    border-left: 3px solid #5d95df;
     margin: 4px 0 20px 2px;
     padding-left: 20px;
     font-style: italic;
+}
+
+blockquote a:hover, blockquote a:focus {
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 ul, ol, dl {
@@ -204,18 +208,20 @@ hr {
 
 table {
     text-align: left;
-    border: 1px solid #f36d00f0;
+    border: 1px solid #0078d4;
 }
 
 th {
     padding: 10px;
-    background: #f36d00f0;
+    /* background: #0062ad; */
     color: white;
+
+    background: #0078d4;
 }
 
 td {
     padding: 10px;
-    border: 1px solid #f36d00f0;
+    border: 1px solid #0078d4;
 }
 
 form {
