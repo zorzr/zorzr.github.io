@@ -36,23 +36,15 @@
 .gitlab {
     background: url('../pics/sprite.png') -25px 0;
 }
-.gitlab:hover, .twitter:focus {
+.gitlab:hover, .gitlab:focus {
     background: url('../pics/sprite.png') -25px -25px;
 }
 .twitter {
     background: url('../pics/sprite.png') -50px 0;
 }
-.twitter:hover {
+.twitter:hover, .twitter:focus{
     background: url('../pics/sprite.png') -50px -25px;
 }
-/*
-.linkedin {
-    background: url('../pics/sprite.png') -75px 0;
-}
-.linkedin:hover {
-    background: url('../pics/sprite.png') -75px -25px;
-}
-*/
 
 #avatar {
     margin: 0;
@@ -60,4 +52,29 @@
     width: 128px;
     height: 128px;
     outline: 3px solid #ccc;
+}
+
+
+/* LIGHT THEME */
+#avatar.light {
+	outline: none;
+}
+
+.github.light {
+    background: url('../pics/sprite_light.png') 0 0;
+}
+.github.light:hover, .github.light:focus {
+    background: url('../pics/sprite_light.png') 0 -25px;
+}
+.gitlab.light {
+    background: url('../pics/sprite_light.png') -25px 0;
+}
+.gitlab.light:hover, .gitlab.light:focus {
+    background: url('../pics/sprite_light.png') -25px -25px;
+}
+.twitter.light {
+    background: url('../pics/sprite_light.png') -50px 0;
+}
+.twitter.light:hover, .twitter.light:focus{
+    background: url('../pics/sprite_light.png') -50px -25px;
 }

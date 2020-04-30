@@ -35,7 +35,7 @@ SOFTWARE.
 
 body {
     color: #f0f0f0;
-    background: #212121;
+    background: #141414;
     font-size: 18px;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -49,7 +49,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
 }
-
 
 h1 {
     margin-bottom: 15px;
@@ -126,12 +125,6 @@ img {
     max-width: 739px;
     padding: 5px;
     margin: 10px 0 10px 0;
-
-    /* box-shadow: 0 0 5px #ebebeb;
-    -webkit-box-shadow: 0 0 5px #ebebeb;
-    -moz-box-shadow: 0 0 5px #ebebeb;
-    -o-box-shadow: 0 0 5px #ebebeb;
-    -ms-box-shadow: 0 0 5px #ebebeb; */
 }
 
 p img {
@@ -146,8 +139,8 @@ p img {
 pre, code {
     width: 100%;
     color: #8acaff;
-    background-color: #303030;
-    border: 1px solid #666;
+    background-color: #222222;
+    border: 1px solid #555;
 
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
     font-size: 14px;
@@ -213,10 +206,8 @@ table {
 
 th {
     padding: 10px;
-    /* background: #0062ad; */
-    color: white;
-
     background: #0078d4;
+    color: white;
 }
 
 td {
@@ -230,10 +221,9 @@ form {
 }
 
 
-/*******************************************************************************
-Full-Width Styles
-*******************************************************************************/
-
+/**********************************************************
+ ** DESKTOP STYLES
+ **********************************************************/
 .footer {
     color: #bbb;
     font-size: 14px;
@@ -258,10 +248,6 @@ header {
     color: #f2f2f2;
 }
 
-#header_wrap {
-    background: #212121;
-}
-
 #header_wrap .inner {
     padding: 60px 10px 0px 0px;
 }
@@ -270,7 +256,7 @@ header {
 #nav-button {
     display: none;
     width: 52px; height: 40px;
-    background: #272727 url("../pics/menu.png") no-repeat center;
+    background: #222222 url("../pics/menu.png") no-repeat center;
     border: 2px solid #555;
     border-radius: 4px;
 }
@@ -298,18 +284,10 @@ header {
     margin-top: 30px;
 }
 
-#main_content {
-    padding-top: 40px;
-}
-
 #main_content.inner {
     background: transparent;
     padding: 10px 100px 50px;
     color: #eee;
-}
-
-#footer_wrap {
-    background: #212121;
 }
 
 #banner {
@@ -325,7 +303,7 @@ header {
 
 /* Guardians of the Galaxy */
 .tab {
-    background: #444;
+    background: #404040;
     color: #f8f8f8;
     padding: 8px 13px 8px 13px;
     font-weight: 700;
@@ -335,7 +313,7 @@ header {
 }
 
 .tab.current {
-    background: #666;
+    background: #606060;
     color: white;
 }
 
@@ -354,10 +332,111 @@ header {
 }
 
 
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
+/**********************************************************
+ ** THEME TOGGLE BUTTON
+ **********************************************************/
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 18px;
+	margin-left: 5px;
+}
 
+.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* background-color: #ccc; */
+	background-color: #666;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 12px;
+	width: 12px;
+	left: 4px;
+	bottom: 3px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #0090ff;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #0090ff;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
+}
+
+.slider.round {
+	border-radius: 20px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+
+/**********************************************************
+ ** LIGHT MODE CLASSES
+ **********************************************************/
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
+    color:#141414;
+}
+
+pre.light, code.light {
+    color: #fff;
+    background-color: #222;
+}
+
+blockquote.light {
+    color: #666;
+    border-left: 3px solid #bbb;
+}
+
+table.light {
+    border: 1px solid #222;
+}
+
+th.light {
+    background: #222;
+}
+
+td.light, hr.light {
+    border: 1px solid #222;
+}
+
+#main_content.light {
+    color:#222;
+	padding: 60px 100px 50px;
+    border-radius: 12px;
+    background: white;
+}
+
+
+/**********************************************************
+ ** MEDIA QUERIES FOR SMALLER SCREENS
+ **********************************************************/
 @media screen and (max-width: 992px) {
     img {
         max-width: 100%;
@@ -425,8 +504,10 @@ Small Device Styles
     }
     #main_content.inner {
         padding: 40px 20px;
-        border-radius: 0;
-    }
+	}
+	#main_content.light {
+		border-radius: 0;
+	}
 
     #page_title {
         margin-top: 35px;
@@ -450,50 +531,4 @@ Small Device Styles
         max-width: 480px;
         font-size: 11px;
     }
-}
-
-/******************************************/
-/* Light Mode classes (to be implemented) */
-/******************************************/
-body.light {
-    color:#373737;
-}
-
-h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
-    color:#222222;
-}
-
-pre.light, code.light {
-    color: #fff;
-    background-color: #222;
-    /* box-shadow: 0 0 10px rgba(0,0,0,.1); */
-}
-
-blockquote.light {
-    color: #666;
-    border-left: 3px solid #bbb;
-}
-
-table.light {
-    border: 1px solid #373737;
-}
-
-th.light {
-    background: #222;
-    color: #fff;
-}
-
-td.light, hr.light {
-    border: 1px solid #222;
-}
-
-#main_content.light {
-    padding: 70px 100px;
-    border-radius: 12px;
-    background: white;
-    /* box-shadow: 0 0 5px #ebebeb;
-    -webkit-box-shadow: 0 0 5px rgba(0, 183, 255, 0.5);
-    -moz-box-shadow: 0 0 5px rgba(0, 183, 255, 0.5);
-    -o-box-shadow: 0 0 5px rgba(0, 183, 255, 0.5);
-    -ms-box-shadow: 0 0 5px rgba(0, 183, 255, 0.5); */
 }
